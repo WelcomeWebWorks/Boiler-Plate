@@ -16,5 +16,9 @@ function assertValue<T>(v: T | undefined, errorMessage: string): T {
     throw new Error(errorMessage)
   }
 
+  if (typeof v === 'string' && v === '') {
+    throw new Error(errorMessage)
+  }
+
   return v
 }
