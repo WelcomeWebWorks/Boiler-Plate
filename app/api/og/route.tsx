@@ -1,9 +1,9 @@
 
-import { ImageResponse } from '@vercel/og'
+import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
 import { siteConfig } from '@/config/site'
 
-export const runtime = 'edge'
+
 
 export async function GET(request: NextRequest) {
     try {

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 import { siteConfig } from '@/config/site'
 
-export const runtime = 'edge'
+
 
 export const alt = `${siteConfig.name} - Global Business Solutions`
 export const size = {
