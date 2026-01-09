@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
   }
 
-  const imageUrl = service.mainImage ? urlFor(service.mainImage).url() : undefined
+
 
   return generatePageMetadata(
     `${service.title} - ${siteConfig.name} Services`,

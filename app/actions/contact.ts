@@ -2,7 +2,7 @@
 
 import { Resend } from 'resend'
 import { z } from 'zod'
-import { ContactEmail } from '@/components/emails/contact-email'
+
 import { siteConfig } from '@/config/site'
 
 const resend = new Resend(process.env.RESEND_API_KEY)

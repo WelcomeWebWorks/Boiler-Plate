@@ -44,7 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ]
 
     // Service pages
-    const serviceUrls = services?.map((page: any) => ({
+    const serviceUrls = services?.map((page: { slug: string; _updatedAt: string }) => ({
         url: `${baseUrl}/services/${page.slug}`,
         lastModified: new Date(page._updatedAt),
         changeFrequency: 'weekly' as const,
@@ -52,7 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })) || []
 
     // Blog post pages
-    const postUrls = posts?.map((page: any) => ({
+    const postUrls = posts?.map((page: { slug: string; _updatedAt: string }) => ({
         url: `${baseUrl}/blog/${page.slug}`,
         lastModified: new Date(page._updatedAt),
         changeFrequency: 'weekly' as const,
@@ -60,7 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })) || []
 
     // Legal pages
-    const legalUrls = legalPages?.map((page: any) => ({
+    const legalUrls = legalPages?.map((page: { slug: string; _updatedAt: string }) => ({
         url: `${baseUrl}/legal/${page.slug}`,
         lastModified: new Date(page._updatedAt),
         changeFrequency: 'yearly' as const,

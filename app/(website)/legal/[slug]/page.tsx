@@ -1,5 +1,5 @@
 import { client } from "@/sanity/lib/client"
-import { siteConfig } from "@/config/site"
+
 import { generatePageMetadata } from "@/lib/seo-config"
 import { notFound } from "next/navigation"
 import { Metadata } from "next"

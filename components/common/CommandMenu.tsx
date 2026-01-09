@@ -5,12 +5,6 @@ import { useRouter } from "next/navigation"
 import { Command } from "cmdk"
 import { useTheme } from "next-themes"
 import {
-    Calculator,
-    Calendar,
-    CreditCard,
-    Settings,
-    Smile,
-    User,
     Search,
     FileText,
     Home,
@@ -21,9 +15,6 @@ import {
     Sun,
     Monitor
 } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 export function CommandMenu() {
     const router = useRouter()

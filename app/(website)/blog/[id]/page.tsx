@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     }
   }
 
-  const imageUrl = post.image ? urlFor(post.image).url() : siteConfig.ogImage
+
   const siteName = siteConfig.name
 
   return generatePageMetadata(
