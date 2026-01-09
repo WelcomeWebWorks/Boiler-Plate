@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:e2e": "playwright test",
     "prepare": "husky",
     "generate": "plop"
   },
@@ -78,7 +77,6 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
     "@tailwindcss/postcss": "^4",
     "@types/hast": "^3.0.4",
     "@types/node": "^20",

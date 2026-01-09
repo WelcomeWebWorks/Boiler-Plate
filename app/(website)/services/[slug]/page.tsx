@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { client } from "@/sanity/lib/client"
-import { urlFor } from "@/sanity/lib/image"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
